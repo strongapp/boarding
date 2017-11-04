@@ -22,7 +22,7 @@
 
     <div style="margin-bottom: 30px"></div>
 
-    <%= form_tag("submit", method: "post", style: "max-width: 400px;", onsubmit: "didSubmit()") do %>
+    <%= form_tag("submit", method: "post", style: "max-width: 400px; margin: 0 auto;", onsubmit: "didSubmit()") do %>
       <%= label_tag(:first_name, t(:first_name_label)) %>
       <%= text_field_tag :first_name, '', class: "form-control", placeholder: t(:first_name_placeholder) %><br />
       <%= label_tag(:last_name, t(:last_name_label)) %>
