@@ -12,17 +12,17 @@
   <!-- End Google Analytics -->
 <% end %>
 
-<div class="container" style="max-width: 400px; padding-top: 40px;">
+<div class="container" style="max-width: 600px; padding-top: 40px;">
 
   <% unless @message %>
-    <h3 style="text-align: center;">Strong TestFlight</h4>
-    <p>Thanks for your interest in joining the Strong TestFlight program.</p>
+    <h3 style="text-align: center;">Strong for iOS TestFlight</h4>
+    <p>Thanks for your interest in joining the Strong for iOS TestFlight program.</p>
     <p>TestFlight allows you to run builds of Strong before release them to the App Store. We’re confident about the stability of these builds, and we won’t test anything which could affect your saved data (routines, workout history, etc.). However, we do make mistakes, and in the worst case you might be unable to complete a workout and need to go to the App Store, and re-download that version.</p>
     <p>If you’re okay with that, we’ll need a few details from you:</p>
 
     <div style="margin-bottom: 20px"></div>
 
-    <%= form_tag("submit", method: "post", style: "text-align: left", onsubmit: "didSubmit()") do %>
+    <%= form_tag("submit", method: "post", style: "max-width: 400px;", onsubmit: "didSubmit()") do %>
       <%= label_tag(:first_name, t(:first_name_label)) %>
       <%= text_field_tag :first_name, '', class: "form-control", placeholder: t(:first_name_placeholder) %><br />
       <%= label_tag(:last_name, t(:last_name_label)) %>
