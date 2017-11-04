@@ -12,12 +12,12 @@
   <!-- End Google Analytics -->
 <% end %>
 
-<div class="container" style="text-align: center; max-width: 350px; padding-top: 40px;">
+<div class="container" style="max-width: 375px; padding-top: 40px;">
 
   <% unless @message %>
-    <h4>Strong TestFlight</h4>
+    <h3 style="text-align: center;">Strong TestFlight</h4>
     <p>Thanks for your interest in joining the Strong TestFlight program.</p>
-    <p>TestFlight is an app which allows you to test builds of Strong before we release them to the App Store. We’re pretty confident about the stability of these builds, and we won’t test anything which could affect your saved data (routines, workout history, etc.). However, we do make mistakes, and in the worst case you might be unable to complete a workout and need to go to the App Store, and re-download that version if we can’t fix it in time.</p>
+    <p>TestFlight allows you to run builds of Strong before release them to the App Store. We’re confident about the stability of these builds, and we won’t test anything which could affect your saved data (routines, workout history, etc.). However, we do make mistakes, and in the worst case you might be unable to complete a workout and need to go to the App Store, and re-download that version.</p>
     <p>If you’re okay with that, we’ll need a few details from you:</p>
 
     <div style="margin-bottom: 20px"></div>
@@ -28,8 +28,8 @@
       <%= label_tag(:last_name, t(:last_name_label)) %>
       <%= text_field_tag :last_name, '', class: "form-control", placeholder: t(:last_name_placeholder) %><br />
       <%= label_tag(:email, t(:email_label), class: "required") %>
+      <p>We recommend you use your Apple ID here, otherwise you may get duplicate emails from TestFlight.</p>
       <%= email_field_tag :email, '', class: "form-control", placeholder: t(:email_placeholder) %><br />
-      We recommend you use your Apple ID here, otherwise you may get duplicate emails from TestFlight.
       <br />
 
       <% if ENV["ITC_TOKEN"] %>
