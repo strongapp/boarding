@@ -18,6 +18,11 @@
     <h2 style="text-align: center;">Strong TestFlight</h2>
     <p>Thanks for your interest in joining the Strong for iOS TestFlight program.</p>
     <p>TestFlight allows you to run builds of Strong before we release them to the App Store. We’re confident about the stability of these builds, and we won’t test anything which could affect your saved data (routines, workout history, etc.). However, we do make mistakes, and in the worst case you might be unable to complete a workout and need to go to the App Store, and re-download that version.</p>
+
+    <h3>Unfortunately, we can’t accept new sign ups at the moment.</h3>
+
+<%
+=begin
     <p>If you’re okay with that, we’ll need a few details from you:</p>
 
     <div style="margin-bottom: 30px"></div>
@@ -42,6 +47,8 @@
 
       <br />
       <%= submit_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', id: "submit" %>
+=end
+%>
     <% end %>
   <% else %>
     <p class="alert alert-<%= @type %>">
