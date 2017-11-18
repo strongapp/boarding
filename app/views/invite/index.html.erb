@@ -21,8 +21,7 @@
 
     <h3>Unfortunately, we can’t accept new sign ups at the moment.</h3>
 
-<%
-=begin
+<% =begin %>
     <p>If you’re okay with that, we’ll need a few details from you:</p>
 
     <div style="margin-bottom: 30px"></div>
@@ -48,8 +47,10 @@
       <br />
       <%= submit_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', id: "submit" %>
     <% end %>
-=end
-%>
+<% =end %>
+
+
+
   <% else %>
     <p class="alert alert-<%= @type %>">
       <%= @message %>
