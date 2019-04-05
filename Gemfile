@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# ruby '2.3.3'
+# ruby '2.4.6'
 
 # Updated for CVE-2018-16476: https://nvd.nist.gov/vuln/detail/CVE-2018-16476.
 gem 'activejob', '>= 4.2.11'
