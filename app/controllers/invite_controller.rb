@@ -1,5 +1,6 @@
 require 'spaceship'
 class InviteController < ApplicationController
+
   before_action :set_app_details
   before_action :check_disabled_text
   before_action :check_imprint_url
@@ -7,15 +8,18 @@ class InviteController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    if boarding_service.user and boarding_service.password
-      # default
-      @email = params[:email]
-    else
-      render 'environment_error'
-    end
-  rescue => ex
-    update_spaceship_message
-    raise ex
+
+    redirect_to "https://testflight.apple.com/join/X96MQKME"
+
+  #   if boarding_service.user and boarding_service.password
+  #     # default
+  #     @email = params[:email]
+  #   else
+  #     render 'environment_error'
+  #   end
+  # rescue => ex
+  #   update_spaceship_message
+  #   raise ex
   end
 
   def update_spaceship_message
@@ -30,7 +34,7 @@ class InviteController < ApplicationController
       render :index
       return
     end
-    
+
     email = params[:email]
     first_name = params[:first_name]
     last_name = params[:last_name]
@@ -57,7 +61,7 @@ class InviteController < ApplicationController
         return
       end
     end
-    
+
     if email.length == 0
       render :index
       return
