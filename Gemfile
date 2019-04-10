@@ -23,7 +23,7 @@ gem "loofah", ">= 2.2.3"
 
 gem 'jquery-rails'
 
-gem 'fastlane', '>= 2.117.1', '< 3.0.0'
+gem 'fastlane', '< 3.0.0'
 
 gem 'bootstrap-sass', '~> 3.4.1'
 
